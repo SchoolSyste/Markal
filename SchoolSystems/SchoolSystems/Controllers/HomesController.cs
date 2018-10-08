@@ -13,5 +13,9 @@ namespace SchoolSystems.Controllers
         {
             return View();
         }
+        public ActionResult admin()
+        {
+            return View();
+        }
     }
 }
