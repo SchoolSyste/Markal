@@ -209,6 +209,7 @@
     <Content Include="Views\Homes\Index.cshtml" />
     <Content Include="Views\Shared\_Partialhead.cshtml" />
     <Content Include="Views\Homes\admin.cshtml" />
+    <Content Include="Views\Homes\AdminDashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
