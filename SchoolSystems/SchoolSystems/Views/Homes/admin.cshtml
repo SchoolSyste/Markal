@@ -1,13 +1,60 @@
-﻿<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html>
-<html>
+﻿
+
+
+
+<style type="text/css">
+    body {
+        background-image: url(../../images/1366x768-data_out_170_68768490-school-wallpapers.jpg)
+    }
+    .container{
+        margin-top:100px;
+    }
+
+    #form {
+        background-color: grey;
+        min-height: 150px;
+        padding: 5px 40px 40px 40px;
+    }
+
+    #btn {
+        margin-top: 5px;
+    }
+
+    .adddepartment {
+        font-size: 55px;
+        font-family: Agency FB;
+        font-weight: 500;
+        border-bottom-style: ridge;
+        margin-left: 200px;
+    }
+
+    #text {
+        font-size: 700px;
+    }
+
+    #design {
+        margin-top:20px;
+        margin-left:30px;
+    }
+
+    .btn-primary {
+        border-radius: 0px;
+        padding: 10px;
+        width: 28%;
+    }
+
+    .btn-danger {
+        border-radius: 0px;
+        padding: 10px;
+        width: 28%;
+    }
+</style>
 
 <head>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
     <title>Admin LogIn</title>
     <meta charset="utf-8">
     <link href="~/Content/Adminstyle.css" rel="stylesheet" />
@@ -17,29 +64,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--webfonts-->
     
     
+
 </head>
-<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3" id="form">
+            <b class="adddepartment">Admin</b>
+            <form method="post">
+                <div id="design">
+                    <div class="form-group">
 
-    <!-----start-main---->
-    <div class="login-form">
-        <div class="head">
-            <img src="~/images/t1" alt="" />
-
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" class="form-control  " name="uname" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" class="form-control" name="psw" required />
+                    </div>
+                    <div class="form-group" id="btn">
+                        <button type="submit" class="btn btn-group-lg ">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </form>
         </div>
-        <form>
-            <div>
-                <input type="text" class="text" value="USERNAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'USERNAME';}"><a href="#" class=" icon user"></a>
-            </div>
-            <div>
-                <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"><a href="#" class=" icon lock"></a>
-            </div>
-            <div class="p-container">
-                <label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Remember Me</label>
-                <input type="submit" onclick="myFunction()" value="SIGN IN">
-                <div class="clear"> </div>
-            </div>
-        </form>
     </div>
-    
-</body>
-</html>
+</div>
+                                 
+
